@@ -2,7 +2,7 @@
 
 # Fase set seek
 
-### **Puntuación Final:** `[  ]` / 30
+## **Puntuación Final:** `[  ]` / 30
 
 ## Rúbrica de Evaluación: Arquitectura y Programación del Computador Hack
 
