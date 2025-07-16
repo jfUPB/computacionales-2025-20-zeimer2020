@@ -1,8 +1,6 @@
-# Unidad 1
+# Unidad 1 ✅ Rúbrica
 
-## ✅ Rúbrica
-
-### Fase set seek
+# Fase set seek
 
 ### **Puntuación Final:** `[  ]` / 30
 
