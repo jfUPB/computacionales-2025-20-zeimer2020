@@ -48,7 +48,7 @@ El PC es el que lleva el control de en que parte del programa vamos. el dice que
 @i sirve para guardar o usar un numero que esta en la memoria. por otro lado , READKEYBOARD no guarda nada, es solo una marca que le dice al programa donde volver o repetir una parte del codigo
 
 #### Describe que se necesita para leer el teclado y mostrar informacion en la pantalla
-Para leer el teclado se usa KBD, que es una dirección especial que nos dice si se presiono una tecla. Para mostrar algo en la pantalla se usan direcciones a partir de SCREEN, donde se puede escribir -1 para encender los pixeles o 0 para apagarlos
+Para leer el teclado se usa KBD, que es una direccion especial que nos dice si se presiono una tecla. Para mostrar algo en la pantalla se usan direcciones a partir de SCREEN, donde se puede escribir -1 para encender los pixeles o 0 para apagarlos
 
 #### Identifica un bucle en el programa y explica su funcionamiento
 El bucle empieza en la etiqueta READKEYBOARD y se repite una y otra vez. Revisa si alguien presiono una tecla. si no, borra un píxel de la pantalla y vuelve al inicio del bucle, si se presiono una tecla, cambia el comportamiento
