@@ -39,22 +39,22 @@ Los datos guardados en la moemoria ram son temporales y se desaparecen al apagar
 ### Actividad 2
 
 #### Identifica una instrucción que use la ALU y explica qué hace
-Una instrucción que usa la ALU es M=M-1. Lo que hace es tomar el número que hay guardado en una posición de la memoria y le resta 1. En este programa, se usa para ir bajando por la pantalla mientras se borran los punticos
+Una instruccion que usa la ALU es M=M-1. Lo que hace es tomar el numero que hay guardado en una posicion de la memoria y le resta 1. En este programa, se usa para ir bajando por la pantalla mientras se borran los punticos
 
 #### ¿Para qué sirve el registro PC?
-El PC es el que lleva el control de en qué parte del programa vamos. el dice qué instrucción se debe ejecutar ahora, y normalmente pasa a la siguiente línea, a menos que haya un salto que se escribe JMP que lo mande a otra parte
+El PC es el que lleva el control de en que parte del programa vamos. el dice que instruccion se debe ejecutar ahora, y normalmente pasa a la siguiente linea, a menos que haya un salto que se escribe JMP que lo mande a otra parte
 
 #### ¿Cuál es la diferencia entre @i y @READKEYBOARD?
-@i sirve para guardar o usar un numero que esta en la memoria. por otro lado , @READKEYBOARD no guarda nada, es solo una marca que le dice al programa donde volver o repetir una parte del código
+@i sirve para guardar o usar un numero que esta en la memoria. por otro lado , READKEYBOARD no guarda nada, es solo una marca que le dice al programa donde volver o repetir una parte del codigo
 
 #### Describe qué se necesita para leer el teclado y mostrar información en la pantalla
-Para leer el teclado se usa KBD, que es una dirección especial que nos dice si se presiono una tecla. Para mostrar algo en la pantalla se usan direcciones a partir de @CREEN, donde se puede escribir -1 para encender los pixeles o 0 para apagarlos
+Para leer el teclado se usa KBD, que es una dirección especial que nos dice si se presiono una tecla. Para mostrar algo en la pantalla se usan direcciones a partir de SCREEN, donde se puede escribir -1 para encender los pixeles o 0 para apagarlos
 
 #### Identifica un bucle en el programa y explica su funcionamiento
 El bucle empieza en la etiqueta READKEYBOARD y se repite una y otra vez. Revisa si alguien presiono una tecla. si no, borra un píxel de la pantalla y vuelve al inicio del bucle, si se presiono una tecla, cambia el comportamiento
 
 #### Identifica una condición en el programa y explica su funcionamiento
-Una condicion del programa es D;JNE, que significa “salte si el valor en D no es 0”. Se usa justo después de leer KBD, para saber si se presionó una tecla. Si se presiono el programa salta a otra parte para hacer algo diferente
+Una condicion del programa es D;JNE, que significa “salte si el valor en D no es 0”. Se usa justo después de leer KBD, para saber si se presiono una tecla. Si se presiono el programa salta a otra parte para hacer algo diferente
 
 
 
