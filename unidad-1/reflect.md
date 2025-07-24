@@ -4,8 +4,6 @@
 
 ### Actividad 5
 
-### Actividad 5
-
 Sin consultar tus apuntes, el simulador o cualquier otro material, responde con tus propias palabras a las siguientes preguntas. ¡No te preocupes por la perfección! El objetivo es ver qué recuerdas ahora mismo.
 
 Parte 1: recuperación de conocimiento (retrieval practice)
@@ -93,3 +91,12 @@ cuando logre hacer el loop y que el teclado reaccionara
 Pensando en la próxima unidad, ¿Qué harás diferente en tu proceso de estudio para aprender de manera más efectiva?
 
 estar mas pendiente de no equivocarme en las ramas y no cometer errores en la colocacion de las actividades en las carpetas
+
+
+Encuentra un compañero de trabajo.
+Intercambien las URLs de sus bitácoras de aprendizaje.
+Lee las entradas de tu compañero correspondientes a las actividades 01, 02, 03 y 04.
+Utilizando la rúbrica de la unidad, evalúa cada actividad y deja un comentario de retroalimentación por cada criterio. Recuerda ser específico y constructivo. Tu feedback debe ayudar a tu compañero a identificar sus fortalezas y áreas de oportunidad. Todos estos comentarios los dejarás en tu propia bitácora.
+Una vez que hayas terminado, comparte tus comentarios con tu compañero.
+
+Opinion de bitacora del compañero: pudo realizar las actividades 1 y 2 correctamente y se notaba entender el tema a pesar de no haber realizado las actividades 3 y 4
