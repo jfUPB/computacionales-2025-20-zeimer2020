@@ -55,8 +55,3 @@ El bucle empieza en la etiqueta READKEYBOARD y se repite una y otra vez. Revisa 
 
 #### Identifica una condicion en el programa y explica su funcionamiento
 Una condicion del programa es D;JNE, que significa “salte si el valor en D no es 0”. Se usa justo después de leer KBD, para saber si se presiono una tecla. Si se presiono el programa salta a otra parte para hacer algo diferente
-
-
-
-
-
