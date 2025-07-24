@@ -2,7 +2,7 @@
 
 ## 🤔 Fase: Reflect
 
-### Actividad 5
+### Actividad 5 6 y 7
 
 Sin consultar tus apuntes, el simulador o cualquier otro material, responde con tus propias palabras a las siguientes preguntas. ¡No te preocupes por la perfección! El objetivo es ver qué recuerdas ahora mismo.
 
@@ -100,3 +100,25 @@ Utilizando la rúbrica de la unidad, evalúa cada actividad y deja un comentario
 Una vez que hayas terminado, comparte tus comentarios con tu compañero.
 
 Opinion de bitacora del compañero: pudo realizar las actividades 1 y 2 correctamente y se notaba entender el tema a pesar de no haber realizado las actividades 3 y 4
+
+Responde a las siguientes preguntas. Tu honestidad es lo más importante para que este ejercicio sea útil.
+
+Continuar: ¿Qué aspecto de las actividades, las explicaciones o la dinámica de la clase te ha resultado más útil o te ha gustado más y debería seguir haciendo?
+
+me resulto muy util el truco que nos dio el profe de programar primero desde el futuro y luego ir con lo demas
+
+Dejar de hacer: ¿Qué aspecto de la unidad te ha resultado confuso, poco útil o frustrante? ¿Hay algo que crees que debería eliminar o cambiar drásticamente?
+
+me ha frustrado un poco el tema del loop pero poco a poco voy entendiendolo a la perfeccion
+
+Empezar a hacer: ¿Qué te habría gustado que hiciéramos que no hicimos? ¿Tienes alguna idea para una actividad o un recurso que podría mejorar el aprendizaje en la próxima unidad?
+
+por ahora vamos bien, aprecio como se realizan las clases y como muestran cada ejercisio, sobre todo en las que explican como funciona la teoria y de una pasamos a la practica
+
+Ritmo y Dificultad: en una escala del 1 (muy fácil/lento) al 5 (muy difícil/rápido), ¿Cómo calificarías el ritmo y la dificultad general de esta unidad? ¿Por qué?
+
+3, digamos que fue dificil, sin embargo no me parecio imposible, al final se pudo hacer
+
+Comentario Adicional: ¿Hay algo más que te gustaría compartir sobre tu experiencia de aprendizaje en esta unidad?
+
+que perdon por haber hecho el lio entre las ramas
