@@ -19,3 +19,8 @@ M=1
 
 <img width="916" height="336" alt="image" src="https://github.com/user-attachments/assets/95cb708b-1a47-4fd9-8430-b871cf3e5301" />
 <img width="1859" height="568" alt="image" src="https://github.com/user-attachments/assets/61432bc2-68c6-4f59-ac20-ffe6a20d8bfc" />
+
+### ACTIVIDAD 3 
+
+<img width="1865" height="506" alt="image" src="https://github.com/user-attachments/assets/65789a20-e1fc-4dc3-a5fc-f50841ba2266" />
+<img width="1048" height="510" alt="image" src="https://github.com/user-attachments/assets/10e3c8e7-8a3a-4076-a814-9edc2044c669" />
