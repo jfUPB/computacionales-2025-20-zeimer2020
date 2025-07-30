@@ -75,7 +75,7 @@ Evalúa la respuesta a estas preguntas y solicitudes: `Convertir el programa con
 
 | Nivel | Descripción del Desempeño |
 | :---: | :--- |
-| **5** | **Completo y Preciso:** La bitácora presenta una conversión correcta del ciclo for a ensamblador que es funcionalmente equivalente al while dado. Incluye un análisis comparativo exhaustivo entre ambas versiones identificando similitudes y diferencias. Las conclusiones son sólidas y demuestran comprensión profunda de las estructuras de control. |
+| **5** | **Completo y Preciso:** La bitácora presenta una conversión correcta del ciclo for a ensamblador. Incluye un análisis comparativo exhaustivo entre ambas versiones identificando similitudes y diferencias. Las conclusiones son sólidas y demuestran comprensión profunda de las estructuras de control. |
 | **4** | **Logrado:** La conversión es correcta y funcional, pero el análisis comparativo es básico, omitiendo algunos aspectos importantes, o las conclusiones son correctas pero superficiales. |
 | **3** | **Suficiente:** La conversión del for es mayoritariamente correcta, pero contiene errores menores. El análisis comparativo es superficial y las conclusiones son vagas o incompletas. |
 | **2** | **En Desarrollo:** La conversión contiene errores significativos que afectan la funcionalidad. El análisis comparativo es deficiente y las conclusiones son incorrectas o no se presentan. |
