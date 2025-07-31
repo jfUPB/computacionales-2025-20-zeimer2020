@@ -24,3 +24,149 @@ M=1
 
 <img width="1865" height="506" alt="image" src="https://github.com/user-attachments/assets/65789a20-e1fc-4dc3-a5fc-f50841ba2266" />
 <img width="1048" height="510" alt="image" src="https://github.com/user-attachments/assets/10e3c8e7-8a3a-4076-a814-9edc2044c669" />
+
+``` asm
+@SCREEN
+M=-1
+@CONTADOR
+M=0
+
+(LEER)
+
+@KBD
+D=M
+@100
+D=D-A
+@DERECHA
+D;JEQ
+
+
+@KBD
+D=M
+@105
+D=D-A
+@IZQUIERDA
+D;JEQ
+
+@LEER
+0;JMP
+
+(DERECHA)
+@CONTADOR
+D=M
+@SCREEN
+A=D+A
+M=0
+
+
+@CONTADOR
+M=M+1
+D=M
+@SCREEN
+A=D+A
+
+M=-1
+@LEER
+0;JMP
+
+(IZQUIERDA)
+@CONTADOR 
+D=M
+@SCREEN
+A=D+A
+M=0
+
+@CONTADOR
+M=M-1
+D=M
+@SCREEN
+A=D+A
+
+M=-1
+
+@LEER
+0;JMP
+```
+
+### Actividad 4
+
+``` c++
+int sum=0;
+for(int i = 1; i <=100; i++){
+   sum+= i;
+}
+```
+ahora lo pasamos a asm
+
+```
+// Adds1+...+100.
+ @i // i refers to some memory location.
+ M=1 // i=1
+ @sum // sum refers to some memory location.
+ M=0 // sum=0
+ (LOOP)
+ @i
+ D=M // D=i
+ @100
+ D=D-A // D=i-100
+ @END
+ D;JGT // If(i-100)>0 gotoEND
+ @i
+ D=M // D=i
+ @sum
+ M=D+M // sum=sum+i
+ @i
+ M=M+1 // i=i+1
+ @LOOP
+ 0;JMP // GotoLOOP
+ (END)
+ @END
+ 0;JMP // Infinite loop
+```
+
+Un puntero es una variable en la que se guarda un valor entero
+
+int* ptr; declaro un puntero : ptr
+
+ptr es una variable que guarda direcciones de otras variables
+
+
+int i = 5;
+int * ptr = &5; definicion y declaracion de variable
+
+int j = ptr;
+
+### Actividad 5
+
+& es pa llamar direccion
+
+seria
+
+``` c++
+int j = *ptr //ptr es el puntero
+para escribir con el puntero es
+```
+``` c++
+*ptr = 25 // se escribe en el puntero el valor que se quiere ingresar
+```
+
+
+``` c++
+int a = 10;
+int* p;
+p = &a;
+*p = 20;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
