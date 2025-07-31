@@ -174,6 +174,7 @@ M=D
 A=M
 @20
 D=A
+M=D
 ```
 
 siguiente codigo de c++
@@ -186,8 +187,26 @@ p = &a;
 b = *p;
 ```
 
-
-
+``` asm
+@10
+D=A
+@16
+M=D
+@5
+D=A
+@17
+M=D
+@16
+D=A
+@18
+M=D
+@18
+A=M
+D=M
+@17
+M=D
+``` 
+el codigo primero pone el numero 10 en la variable a, y el numero 5 en la variable b. Luego crea un puntero p, y le guarda la direccion donde esta a. Al final, usa ese puntero para leer el valor de a, y se lo pone a b. Entonces, b que antes tenia 5, ahora queda con el mismo valor de a, o sea 10.
 
 
 
