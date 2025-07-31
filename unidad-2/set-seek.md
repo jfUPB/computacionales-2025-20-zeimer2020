@@ -98,7 +98,7 @@ for(int i = 1; i <=100; i++){
 ```
 ahora lo pasamos a asm
 
-```
+``` asm
 // Adds1+...+100.
  @i // i refers to some memory location.
  M=1 // i=1
@@ -150,6 +150,7 @@ para escribir con el puntero es
 *ptr = 25 // se escribe en el puntero el valor que se quiere ingresar
 ```
 
+### Actividad 5
 
 ``` c++
 int a = 10;
@@ -157,6 +158,35 @@ int* p;
 p = &a;
 *p = 20;
 ```
+
+ahora en asm
+
+``` asm
+@10
+D=A
+@16
+M=D
+@16
+D=A
+@17
+M=D
+@17
+A=M
+@20
+D=A
+```
+
+siguiente codigo de c++
+
+``` c++
+int a = 10;
+int b = 5;
+int *p;
+p = &a;
+b = *p;
+```
+
+
 
 
 
