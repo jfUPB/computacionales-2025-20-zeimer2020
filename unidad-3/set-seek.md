@@ -159,19 +159,20 @@ Los resultados coincidieron con lo esperado, pero para confirmar el motivo use u
 Describe qué demuestran estas capturas sobre la diferencia entre los diferentes tipos de paso por parámetros analizados.
 
 SumarPorValor()
-
+aca se crea una copia cuando solo se entrega init a
 
 <img width="598" height="332" alt="image" src="https://github.com/user-attachments/assets/6d053722-5c03-4661-9f54-5f7e09a8365e" />
 
 SumarPorReferencia()
 
+aun crea la copia y se ve que la variable fue modificada
 <img width="630" height="357" alt="image" src="https://github.com/user-attachments/assets/caf7c7d7-516e-4d9d-8262-60d4e28a7f55" />
 
 <img width="643" height="417" alt="image" src="https://github.com/user-attachments/assets/b3e3c56c-5a05-489f-b616-47103fc6383a" />
 
 SumarPorPuntero()
 
-
+Se observa cómo toma el espacio de memoria del valor, crea una copia, la modifica y altera la original
 <img width="751" height="404" alt="image" src="https://github.com/user-attachments/assets/428c15bb-c09f-482c-9840-906813ede2b6" />
 
 <img width="782" height="453" alt="image" src="https://github.com/user-attachments/assets/7cb2fccf-aa0c-439c-83e2-a2c8170792c6" />
@@ -182,4 +183,5 @@ Explica con tus propias palabras el comportamiento de contador_estatico. ¿Por q
 Lo que sucede con una variable estatica es que conserva su valor porque queda asociada siempre al mismo lugar de memoria. Dicho de otro modo, no se crea una copia nueva cada vez que se llama, sino que se mantiene ligada a una direccion fija, lo que explica que solo se inicialice una unica vez y que luego “recuerde” lo que ya tenia.
 
 La diferencia frente a una variable comun esta en el lugar donde se almacenan. Mientras las variables normales suelen vivir en la memoria stack y se destruyen al terminar la funcion, las estaticas se guardan en la misma zona de memoria que las globales. Esa ubicacion especial les da la capacidad de mantener su valor entre llamadas sucesivas y de no volver a inicializarse en cada ejecucio.
+
 
