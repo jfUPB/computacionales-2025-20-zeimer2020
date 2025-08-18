@@ -129,10 +129,14 @@ Predicción
 
 ¿Cuál será la salida final en la consola de este programa?
 
-En un principio va a mostrar el valor guardado en A, posteriormente llamará la función SumaPorValor() y le entregará como parametro val_A, que como aprendimos en realidad es una copia de la variable inicializada en la memoria stack. Dentro de esta función se le sumará 10 al valor que entregó "a", por lo que en la consola escribirá: Dentro de sumaPorValor, 'a' ahora es: 30, sin embargo esto no cambiará el valor de val_A puesto que no se modificó el valor en el espacio de memoria de esta variable, solo el de la copia.
-En el caso de B esto es diferente, puesto que es por referencia entonces no le pasa una copia sino la variable de verdad, por lo que la operación que se realiza dentro de la función si afecta el valor de la variable val_B. El nuevo valor será 30.
-En este caso tambien se modifica el valor de la variable entregada, sin embargo lo hace diferente, puesto que recibe el espacio de memoria de la variable y eso es lo que manipula realmente, provocando que el resultado final sea 30.
-Por último están esas tres llamadas a la función ejecutarContador(), en este caso si se aumentaría el contador hasta 3, incluso si parece que reescribe la variable varias veces este no es el caso puesto que una variable estática solo se puede inicializar una vez.
+Primero se mostrara el valor almacenado en A. Luego se invocara la funcion SumaPorValor(), a la cual se le pasa como parametro val_A, que en realidad es una copia de la variable original guardada en la memoria stack. Dentro de la funcion se suma 10 al valor recibido, por lo que en la consola aparecera: Dentro de sumaPorValor, 'a' ahora es: 30. Sin embargo, esto no altera el valor de val_A, ya que solo se modifico la copia y no la direccion de memoria de la variable original.
+
+En el caso de B la situacion cambia, pues al ser pasado por referencia no se envia una copia, sino la variable real. Por eso, la operacion dentro de la funcion si modifica el valor de val_B, y el nuevo valor sera 30.
+
+Algo similar ocurre en el tercer ejemplo, porque la funcion recibe directamente la direccion de memoria de la variable y trabaja sobre ella, lo que hace que el resultado final tambien sea 30.
+
+Finalmente, con las tres llamadas a ejecutarContador(), el contador aumenta hasta 3. Aunque pareciera que la variable se reinicia en cada llamada, esto no ocurre, ya que al ser una variable estatica solo se inicializa una unica vez y conserva su valor entre ejecuciones.
+
 Escribe la salida completa que esperas.
 
 val_A: 20
@@ -141,6 +145,7 @@ val_C: 30
 
 contador_estatico: 3
 Dibuja un mapa de memoria conceptual de este programa
+(acordate de colocar el mapa)
 
 Verificación y análisis
 
@@ -149,29 +154,23 @@ Comparación con el depurador
 Output <img width="627" height="289" alt="image" src="https://github.com/user-attachments/assets/44e0707b-4e4e-48d2-8207-d3d5af7320d1" />
 
 
-De primerazo observo que efectivamente los resultados finales concuerdan con lo que predije, sin embargo me gustaría saber si eso pasó por las razones correctas, entonces ahora voy a hacer un análisis más a fondo utilizando el breakpoint.
-
-Observé que una línea antes de que se inicialice una variable el computador la inicializa antes y le asigna un valor antes de asignarle el valor real.
-
-Los puntos de interés me imagino que se refieron a aquellas líneas de código que alteral variables o ejecutan acciones. Por otro lado tambien pienso que se pueden referir a cuando se llaman funciones, pues es donde radica la diferencia del ejercicio que nos compete.
+Los resultados coincidieron con lo esperado, pero para confirmar el motivo use un breakpoint y note que el sistema asigna un valor previo antes de la inicializacion real, y que los puntos clave son las lineas que modifican variables o llaman funciones, ya que ahi esta la diferencia del ejercicio.
 
 Describe qué demuestran estas capturas sobre la diferencia entre los diferentes tipos de paso por parámetros analizados.
 
 SumarPorValor()
 
-Acá observamos como se crea una copia cuando el parámetro entregado es solo "int a"
 
 <img width="598" height="332" alt="image" src="https://github.com/user-attachments/assets/6d053722-5c03-4661-9f54-5f7e09a8365e" />
 
 SumarPorReferencia()
-Acá se puede ver como aunque se crea una copia de la variable esta igual modifica la variable entregada como parámetro, por eso es que se ve que el valor fue modificado.
 
 <img width="630" height="357" alt="image" src="https://github.com/user-attachments/assets/caf7c7d7-516e-4d9d-8262-60d4e28a7f55" />
 
 <img width="643" height="417" alt="image" src="https://github.com/user-attachments/assets/b3e3c56c-5a05-489f-b616-47103fc6383a" />
 
 SumarPorPuntero()
-Este me gustó mucho observar que sucedia puesto que se ve como literal agarra el espacio de memoria donde está guardado el valor y lo utiliza para crear una copia de una variable para así modificar su valor y finalmente alterar el valor.
+
 
 <img width="751" height="404" alt="image" src="https://github.com/user-attachments/assets/428c15bb-c09f-482c-9840-906813ede2b6" />
 
@@ -179,7 +178,8 @@ Este me gustó mucho observar que sucedia puesto que se ve como literal agarra e
 
 
 Explica con tus propias palabras el comportamiento de contador_estatico. ¿Por qué “recuerda” su valor entre llamadas a la función ejecutarContador? ¿En qué se diferencia de una variable local normal?
-Entiendo que recuerda su valor por que es estático, sin embargo la razón por la cual una variable estática "recuerda" díria que es por que es una especie de referencia constante, es decir, es una variable a la que siempre que se llama su valor va ligado con un espacio de memoria específico, y por eso solo se inicializa una vez y recuerda su valor.
 
-Se diferencia de una variable normal por el espacio de memoria donde está guardado, las variables estáticas estánn guardado en el espacio de memoria donde también están las globales, lo que le da sus propiedades únicas de recordar su valor y de solo ser inicializados una vez.
+Lo que sucede con una variable estatica es que conserva su valor porque queda asociada siempre al mismo lugar de memoria. Dicho de otro modo, no se crea una copia nueva cada vez que se llama, sino que se mantiene ligada a una direccion fija, lo que explica que solo se inicialice una unica vez y que luego “recuerde” lo que ya tenia.
+
+La diferencia frente a una variable comun esta en el lugar donde se almacenan. Mientras las variables normales suelen vivir en la memoria stack y se destruyen al terminar la funcion, las estaticas se guardan en la misma zona de memoria que las globales. Esa ubicacion especial les da la capacidad de mantener su valor entre llamadas sucesivas y de no volver a inicializarse en cada ejecucio.
 
