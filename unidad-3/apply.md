@@ -98,7 +98,7 @@ int main() {
     Personaje heroe("Aragorn", 100, 20, 15);
     heroe.imprimir();
     heroe.setVida(80);
-    std::cout << "\nDespués de recibir daño...\n";
+    std::cout << "\nle pegan\n";
     heroe.imprimir();
     return 0;
 }
@@ -108,3 +108,5 @@ int main() {
 El primer error de fuga de memoria ya esta corregido porque la clase ya no usa punteros ni new[]. Ahora las estadisticas viven como variables normales dentro del objeto, asi que cuando el objeto se destruye, la memoria se libera sola sin que quede nada perdido.
 
 El segundo error de copia superficial tambien queda resuelto porque al copiar un personaje se copian directamente los valores de vida, ataque y defensa, no una direccion de memoria compartida. Cada objeto tiene sus propios datos, asi que modificar uno no afecta al otro y no existe riesgo de doble borrado.
+
+tambien queria asegurarme de que funcionara entonces luego le modifico la vida al personaje despues de que "recibe daño" modificando su variable de vida desde el main despues de crear al personaje con sus propias estadisticas
