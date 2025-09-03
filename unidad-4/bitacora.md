@@ -177,7 +177,7 @@ void ofApp::keyPressed(int key) {
 			cur->opacity = a;
 		}
 	} else if (key == 's') {
-		string fname = "brush_" + ofGetTimestampString("%Y%m%d_%H%M%S") + ".png";
+		string fname = "brush_" + ofToString(ofGetFrameNum()) + ".png";
 		ofSaveScreen(fname);
 		ofLogNotice() << "Guardado: " << fname;
 	}
@@ -191,16 +191,19 @@ Código para main.cpp:
 #include "ofApp.h"
 #include "ofMain.h"
 
-
+//========================================================================
 int main() {
-	ofSetupOpenGL(1024, 768, OF_WINDOW); 
+	ofSetupOpenGL(1024, 768, OF_WINDOW);
 	ofRunApp(new ofApp());
 }
 
 
+
 ```
+este ultimo ya estaba ahi 
 
 ## Demostración:
 
 [Aquí está el video demostrativo de mi aplicación](url del video no listado en youtube)
+
 
