@@ -15,6 +15,8 @@
 
 - cuando en clases tenemos el mismo metodo pero se definen de diferentes maneras entonces como tal hacen cosas distintas
 
+#### parte 2
+
 ``` C#
 
 using System;
@@ -107,7 +109,22 @@ Polimorfismo:
 
 Observa el bucle foreach. La variable fig es de tipo Figura, pero a veces contiene un Circulo y otras un Rectangulo. Cuando se llama a fig.Dibujar(), el programa ejecuta la versión correcta. En tu opinión, ¿Cómo crees que funciona esto “por debajo”? No necesitas saber la respuesta correcta, solo quiero que intentes razonar cómo podría ser.
 
+- el metodo `Dibujar()` es abstraco lo que significa que no tiene funcion exacta, debido a esto se comportara distinto segun que figura lo este usando, debido a esto cuando diga que dibujara un cuadrado lo hara correctamente con su lado y lado, con el rectangulo la base por la altura y el circulo el radio
 
+#### parte 3
+
+Memoria y herencia: cuando creas un objeto Rectangulo, este tiene Base, Altura y también Nombre. ¿Cómo te imaginas que se organizan esos tres datos en la memoria del computador para formar un solo objeto?
+
+se guardan los datos del objeto en un espacio en la memoria exclusivo para ese objeto, cuando se crea el objeto a su vez se crea el espacio para estos datos
+
+
+El mecanismo del polimorfismo: pensemos de nuevo en la llamada fig.Dibujar(). El compilador solo sabe que fig es una Figura. ¿Cómo decide el programa, mientras se está ejecutando, si debe llamar al Dibujar del Circulo o al del Rectangulo? Lanza algunas ideas o hipótesis.
+
+- verifica como se asignan los valores a cada figura y de ahi empieza a "dibujar" cada figura con sus respectivos valores
+
+La barrera del encapsulamiento: ¿Cómo crees que el compilador logra que no puedas acceder a un miembro private desde fuera de la clase? ¿Es algo que se revisa cuando escribes el código, o es una protección que existe mientras el programa se ejecuta? ¿Por qué piensas eso?
+
+- es una verificacion que se realiza segun lo que uno escriba en el programa y lo que se lea en el codigo una vez comppilado, eso teniendo en cuenta si colocamos private o public
 
 ## 2.  **La pregunta inicial**
 
