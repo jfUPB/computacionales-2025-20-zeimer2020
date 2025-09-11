@@ -126,7 +126,18 @@ La barrera del encapsulamiento: ¿Cómo crees que el compilador logra que no pue
 
 - es una verificacion que se realiza segun lo que uno escriba en el programa y lo que se lea en el codigo una vez comppilado, eso teniendo en cuenta si colocamos private o public
 
-## 2.  **La pregunta inicial**
+#### Actividada 2
+
+<img width="914" height="587" alt="image" src="https://github.com/user-attachments/assets/47d3afc4-831e-4518-9409-b19b0e437fcb" />
+<img width="975" height="676" alt="image" src="https://github.com/user-attachments/assets/aa8b3e36-e9c9-474b-9cf3-a5e272217003" />
+
+#### Actividad 3
+
+Hipotesis del depurado: que me muestre los procesos actuales ocurriendo por la ejecucion del codigo
+resultado: en efecto, paso eso, pero con subprocesos tambien
+<img width="446" height="139" alt="image" src="https://github.com/user-attachments/assets/77f00787-79e4-448c-8f32-c51ec0c1d826" />
+
+<img width="497" height="371" alt="image" src="https://github.com/user-attachments/assets/5403ef22-941e-4323-aff3-7bc5cb9f6a95" />
 
 
 ## 3.  **Registro de exploración:** 
