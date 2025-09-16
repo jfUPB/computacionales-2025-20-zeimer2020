@@ -188,8 +188,8 @@ pues consideraria que 4,5 ya que no pude entener algunos conceptos y tuve que bu
 
 
 codigo final
-
-``` c++ .h
+.h
+``` c++ 
 #pragma once
 #include "ofMain.h"
 #include <vector>
@@ -477,8 +477,8 @@ private:
 	void createRisingParticle();
 };
 ```
-
-```c++ cpp
+cpp
+```c++ 
 #include "ofApp.h"
 
 // --------------------------------------------------------------
