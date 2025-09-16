@@ -497,7 +497,7 @@ void ofApp::update() {
 
 	for (int i = particles.size() - 1; i >= 0; i--) {
 		if (particles[i]->shouldExplode()) {
-			int explosionType = (int)ofRandom(4); // ahora hay 4 tipos
+			int explosionType = (int)ofRandom(4); 
 			int numParticles = (int)ofRandom(20, 30);
 			for (int j = 0; j < numParticles; j++) {
 				if (explosionType == 0) {
