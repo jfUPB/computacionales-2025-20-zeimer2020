@@ -141,8 +141,12 @@ resultado: en efecto, paso eso, pero con subprocesos tambien
 
 
 ## 3.  **Registro de exploración:** 
-> Aquí documentas cada ciclo de pregunta -> hipótesis -> experimento -> hallazgo -> reflexión.
-> Debe ser rico en evidencia visual (código, capturas del depurador con anotaciones, diagramas).
+
+el encapsulamiento que es:
+es basicamente una forma en la que podemos ocultar datos y solo permitir su acceso mediante metodos, acciones o propiedades controladas, esto con la idea de que no se modifiquen de manera accidental o que ocurran errores con repecto a la identidad o valor de los datos almacenados.
+
+la relacion entre los metodos virtuales y el polimorfismo es que los metodos virtuales son aquellos que permiten implementar el polmorfismo, 
+
 
 ## 4.  **Consolidación, autoevaluación y cierre:**
 > [!CAUTION]
