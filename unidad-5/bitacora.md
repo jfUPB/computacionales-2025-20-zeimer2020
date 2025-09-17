@@ -179,6 +179,34 @@ aca pueden verse los tipos de particulas, las mas cercanas a los bordes son las 
 aca se puede ver el nuevo tipo de explosion
 <img width="573" height="548" alt="image" src="https://github.com/user-attachments/assets/e6f5e0de-b4a3-4381-9a11-7755e55743f5" />
 
+1. Que hice y por que
+
+Agregue dos nuevas particulas:
+
+SpiralParticle, que se mueve en forma de espiral y explota al final.
+
+BouncingParticle, que se mueve por la pantalla y rebota en los bordes hasta que explota.
+
+Tambien hice un nuevo tipo de explosion:
+
+DisintegrationExplosion, donde la particula se rompe en bolitas chiquitas que se dispersan rapido.
+
+La idea fue mostrar que al codigo se le pueden meter nuevos efectos sin danar lo que ya estaba.
+
+2. Encapsulamiento, herencia y polimorfismo
+
+Encapsulamiento: cada particula maneja sus datos (posicion, color, vida, etc.) dentro de la clase, asi no se tocan desde afuera.
+
+Herencia: todas las particulas heredan de Particle y las explosiones de ExplosionParticle, asi no repito codigo y solo cambio lo necesario.
+
+Polimorfismo: en el vector particles guardo todo como Particle*, pero cuando llamo update() o draw() se ejecuta lo de la clase real (sea rising, spira o bouncing,
+
+3. Como verifique que funcionaba
+
+Prueba visual: ejecute el programa y vi que las particulas nuevas aparecian en la mitad de la pantalla, unas subian, otras giraban, otras rebotaban, y todas explotaban con los cuatro modos.
+
+Depurador: puse breakpoints en update() y vi que el programa reconocia cada tipo de particula y explosion en tiempo real (ejemplo: SpiralParticle o DisintegrationExplosion). Eso me confirmo que el polimorfismo si estaba funcionando.
+
 
 ## 4.  **Consolidación, autoevaluación y cierre:**
 > [!CAUTION]
@@ -577,3 +605,10 @@ ofApp::~ofApp() {
 	particles.clear();
 }
 ```
+
+
+
+
+
+
+
