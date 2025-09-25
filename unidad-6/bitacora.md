@@ -4,6 +4,7 @@
 ### seek 
 funcionamiento del programa:
 
+### Actividad 1
 
 ##### ¿Cómo puedes interactuar con la aplicación? Menciona específicamente las teclas y qué efecto parecen tener sobre las partículas.
 
@@ -30,7 +31,21 @@ cada vez que pulsamos una tecla llamamos un metodo o algun sector del codigo que
 
 Los observers lo que hacen es actualizarse cuando un objeto especifico cambia, por ejemplo tenemos una particula, si esa particula cambia y esta vinculada a los observers, todos estos se actualizaran en funcion del cambio realizado
 
+### Actividad 2
 
+Explica con tus propias palabras el propósito del patrón Observer. ¿Qué problema resuelve?
+Dicho patron se encarga de usar o mas bien introducir polimorfismo, dejando que otras clasese que serian los observadores esten ahi tecnicamente suscritos (como dices en el ejemplo del github) a la clase que sea sujeto
+
+Dibuja un diagrama que muestre la relación entre Subject, Observer, ofApp y Particle en el caso de estudio, indicando quién es el Sujeto y quiénes los Observadores.
+<img width="721" height="619" alt="image" src="https://github.com/user-attachments/assets/ec60b1bc-7434-4a80-a919-a2ddb153114e" />
+
+
+Construye un diagrama de secuencia que muestre cómo funciona el patrón Observer al presionar una tecla.
+
+
+¿Qué ventajas crees que ofrece usar el patrón Observer en esta aplicación en comparación con, por ejemplo, que ofApp::update recorriera todas las partículas y les dijera directamente que cambien su comportamiento basado en una variable global? Piensa en términos de acoplamiento y extensibilidad.
+
+Usar el patrón Observer reduce el acoplamiento porque las partIculas no dependen directamente de una variable global ni de que ofApp::update las controle, sino que reaccionan a notificaciones de un sujeto; esto facilita la extensibilidad, ya que se pueden añadir nuevos tipos de partIculas u observadores sin cambiar la lOgica central, manteniendo el cOdigo más limpio, modular y fAcil de mantener.
 
 
 
