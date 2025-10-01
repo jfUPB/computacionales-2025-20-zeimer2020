@@ -425,7 +425,7 @@ Factory: la nueva particula la hice usando la factory con el tipo "supernova". E
 
 Observer: la supernova se registra como observer igual que las otras particulas. En ofApp se agrega con addObserver(p) y cuando se usa notify, esta particula recibe el evento en onNotify y cambia su comportamiento. Asi ofApp no necesita saber la logica interna de la supernova.
 
-State: la supernova arranca en SupernovaState. En onEnter acelera su velocidad y en update se va frenando poco a poco, simulando una explosion que se apaga. Gracias al uso de state, si llegan eventos puede cambiar a otros estados como StopState o AttractState sin usar condicionales grandes.
+State: la supernova arranca en SupernovaState. En onEnter acelera su velocidad y en update se va frenando poco a poco, Gracias al uso de state, si llegan eventos puede cambiar a otros estados como StopState o AttractState sin usar condicionales grandes.
 
 ### Autoevaluacion
 
