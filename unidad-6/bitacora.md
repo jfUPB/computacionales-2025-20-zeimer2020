@@ -446,7 +446,7 @@ actividad 2: hice todo menos una actividad entonces por eso es 4.5
 [evidencia](#actividad2) (ver actividad 2)
 
 actividad 3: todo esa completo
-[evidencia]( (ver actividad 3)
+[evidencia](#actividad3) (ver actividad 3)
 
 actividad 4: todo completo
 [evidencia](#Actividad4) (ver actividad 4)
