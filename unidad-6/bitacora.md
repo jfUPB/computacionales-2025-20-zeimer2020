@@ -76,7 +76,7 @@ Los metodos onEnter y onExit se usan para definir acciones al entrar o salir de 
 
 codigo 
 
-``` el .h
+``` ofApp.h
 
 #pragma once
 
