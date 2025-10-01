@@ -74,10 +74,9 @@ Los metodos onEnter y onExit se usan para definir acciones al entrar o salir de 
 
 # Actividad 5
 
-codigo 
+codigo ofApp.h y luego ofApp.cpp
 
 ``` ofApp.h
-
 #pragma once
 
 #include "ofMain.h"
@@ -157,7 +156,7 @@ public:
 	void update(Particle * particle) override;
 };
 
-class BlackHoleState : public State {
+class SupernovaState : public State {
 public:
 	void onEnter(Particle * particle) override;
 	void update(Particle * particle) override;
@@ -179,9 +178,10 @@ public:
 private:
 	std::vector<Particle *> particles;
 };
+
 ```
 
-``` el .cpp
+``` ofApp.cpp
 #include "ofApp.h"
 #include <algorithm>
 
@@ -209,7 +209,6 @@ Particle::Particle()
 	velocity = ofVec2f(ofRandom(-0.5f, 0.5f), ofRandom(-0.5f, 0.5f));
 	size = ofRandom(2.0f, 5.0f);
 	color = ofColor(255);
-
 	state = new NormalState();
 	state->onEnter(this);
 }
@@ -262,7 +261,6 @@ void Particle::onNotify(const std::string & event) {
 void Particle::keepInsideWindow() {
 	const float W = static_cast<float>(ofGetWidth());
 	const float H = static_cast<float>(ofGetHeight());
-
 	if (position.x < 0.0f) {
 		position.x = 0.0f;
 		velocity.x *= -1.0f;
@@ -323,21 +321,17 @@ void StopState::update(Particle * particle) {
 	particle->position += particle->velocity;
 }
 
-void BlackHoleState::onEnter(Particle * particle) {
-	particle->velocity *= 0.1f;
+void SupernovaState::onEnter(Particle * particle) {
+	particle->velocity *= 4.0f;
 }
 
-void BlackHoleState::update(Particle * particle) {
-	particle->velocity *= 0.95f;
-	if (particle->velocity.lengthSquared() < 1e-6f) {
-		particle->velocity.set(0.0f, 0.0f);
-	}
+void SupernovaState::update(Particle * particle) {
 	particle->position += particle->velocity;
+	particle->velocity *= 0.95f;
 }
 
 Particle * ParticleFactory::createParticle(const std::string & type) {
 	Particle * particle = new Particle();
-
 	if (type == "star") {
 		particle->size = ofRandom(2.0f, 4.0f);
 		particle->color = ofColor(255, 0, 0);
@@ -348,10 +342,10 @@ Particle * ParticleFactory::createParticle(const std::string & type) {
 	} else if (type == "planet") {
 		particle->size = ofRandom(5.0f, 8.0f);
 		particle->color = ofColor(0, 0, 255);
-	} else if (type == "black_hole") {
-		particle->size = ofRandom(12.0f, 16.0f);
-		particle->color = ofColor(0);
-		particle->setState(new BlackHoleState());
+	} else if (type == "supernova") {
+		particle->size = ofRandom(10.0f, 15.0f);
+		particle->color = ofColor(255, 255, 0);
+		particle->setState(new SupernovaState());
 	}
 	return particle;
 }
@@ -366,8 +360,7 @@ ofApp::~ofApp() {
 
 void ofApp::setup() {
 	ofBackground(0);
-	particles.reserve(100 + 5 + 10 + 2);
-
+	particles.reserve(100 + 5 + 10 + 3);
 	for (int i = 0; i < 100; ++i) {
 		Particle * p = ParticleFactory::createParticle("star");
 		particles.push_back(p);
@@ -383,8 +376,8 @@ void ofApp::setup() {
 		particles.push_back(p);
 		addObserver(p);
 	}
-	for (int i = 0; i < 2; ++i) {
-		Particle * p = ParticleFactory::createParticle("black_hole");
+	for (int i = 0; i < 3; ++i) {
+		Particle * p = ParticleFactory::createParticle("supernova");
 		particles.push_back(p);
 		addObserver(p);
 	}
@@ -420,16 +413,16 @@ void ofApp::keyPressed(int key) {
 		break;
 	}
 }
+
 ```
 
 como aplique cada patron 
 
+Factory: la nueva particula la hice usando la factory con el tipo "supernova". En createParticle defini que si el tipo es ese, la particula tenga tamaño grande, color amarillo y que arranque en SupernovaState. De esta forma en el setup solo llamo a la factory con el nombre y no tengo que escribir mas configuracion.
 
-Factory: use el factory para crear la particula nueva pasandole el tipo "black_hole". Alli le puse tamaño grande, color negro y le asigne su estado inicial BlackHoleState. De esta forma toda la configuracion queda centralizada y solo la pido por nombre en setup.
+Observer: la supernova se registra como observer igual que las otras particulas. En ofApp se agrega con addObserver(p) y cuando se usa notify, esta particula recibe el evento en onNotify y cambia su comportamiento. Asi ofApp no necesita saber la logica interna de la supernova.
 
-Observer: la black_hole se registra como observer igual que las demas. Cuando ofApp manda un evento con notify, esta particula recibe la notificacion en onNotify y puede cambiar de estado sin estar directamente ligada a la logica del app.
-
-State: la black_hole empieza en BlackHoleState. El state define como se mueve lentamente y controla su velocidad en update. Si cambian los eventos, setState la puede pasar a otros estados, evitando condicionales largos y haciendo mas facil extender el codigo.
+State: la supernova arranca en SupernovaState. En onEnter acelera su velocidad y en update se va frenando poco a poco, simulando una explosion que se apaga. Gracias al uso de state, si llegan eventos puede cambiar a otros estados como StopState o AttractState sin usar condicionales grandes.
 
 ### Autoevaluacion
 
