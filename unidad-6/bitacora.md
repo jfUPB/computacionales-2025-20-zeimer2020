@@ -1,7 +1,8 @@
 # Bitácora de aprendizaje de la unidad 6
 
-<a> name = "#actividad1" <a\>
 # Actividad 1
+
+<a> name = "actividad1" <a\>
 
 ##### ¿Cómo puedes interactuar con la aplicación? Menciona específicamente las teclas y qué efecto parecen tener sobre las partículas.
 
@@ -434,10 +435,10 @@ actividad 1: esta completa con todo realizado
 [evidencia](#actividad1) (ver actividad 1)
 
 actividad 2: hice todo menos una actividad entonces por eso es 4.5
-[evidencia](#Actividad2) (ver actividad 2)
+[evidencia](#actividad2) (ver actividad 2)
 
 actividad 3: todo esa completo
-[evidencia](#Actividad3) (ver actividad 3)
+[evidencia]( (ver actividad 3)
 
 actividad 4: todo completo
 [evidencia](#Actividad4) (ver actividad 4)
