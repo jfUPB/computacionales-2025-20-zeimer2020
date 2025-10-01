@@ -1,5 +1,6 @@
 # Bitácora de aprendizaje de la unidad 6
 
+<a> name = "#actividad1" <a\>
 # Actividad 1
 
 ##### ¿Cómo puedes interactuar con la aplicación? Menciona específicamente las teclas y qué efecto parecen tener sobre las partículas.
@@ -27,6 +28,7 @@ cada vez que pulsamos una tecla llamamos un metodo o algun sector del codigo que
 
 Los observers lo que hacen es actualizarse cuando un objeto especifico cambia, por ejemplo tenemos una particula, si esa particula cambia y esta vinculada a los observers, todos estos se actualizaran en funcion del cambio realizado
 
+<a> name = "#actividad2" <a\>
 # Actividad 2
 
 Explica con tus propias palabras el propósito del patrón Observer. ¿Qué problema resuelve?
