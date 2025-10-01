@@ -30,7 +30,8 @@ cada vez que pulsamos una tecla llamamos un metodo o algun sector del codigo que
 
 Los observers lo que hacen es actualizarse cuando un objeto especifico cambia, por ejemplo tenemos una particula, si esa particula cambia y esta vinculada a los observers, todos estos se actualizaran en funcion del cambio realizado
 
-<a> name = "#actividad2" <a\>
+<a name = "actividad2"> <a\>
+
 # Actividad 2
 
 Explica con tus propias palabras el propósito del patrón Observer. ¿Qué problema resuelve?
@@ -43,6 +44,8 @@ Dibuja un diagrama que muestre la relación entre Subject, Observer, ofApp y Par
 ¿Qué ventajas crees que ofrece usar el patrón Observer en esta aplicación en comparación con, por ejemplo, que ofApp::update recorriera todas las partículas y les dijera directamente que cambien su comportamiento basado en una variable global? Piensa en términos de acoplamiento y extensibilidad.
 
 Usar el patrón Observer reduce el acoplamiento porque las partIculas no dependen directamente de una variable global ni de que ofApp::update las controle, sino que reaccionan a notificaciones de un sujeto; esto facilita la extensibilidad, ya que se pueden añadir nuevos tipos de partIculas u observadores sin cambiar la lOgica central, manteniendo el cOdigo más limpio, modular y fAcil de mantener.
+
+<a name = "actividad3"> <a\>
 
 # Actividad 3 
 
@@ -62,6 +65,8 @@ Para agregar black_hole, creas la clase con sus valores (grande, negro, lento), 
 
 Que createParticle sea estatico facilita llamarlo sin instancias y es mas simple. La desventaja es que limita configuracion y pruebas. Con una fabrica de instancia hay mas flexibilidad pero toca manejar el objeto.
 
+<a name = "actividad4"> <a\>
+
 # Actividad 4
 
 ##### Explica con tus propias palabras el propósito del patrón State. ¿Cuándo es útil aplicarlo?
@@ -75,6 +80,8 @@ Usar State en Particle es mejor que tener un string y un if/else gigante porque 
 ##### ¿Qué responsabilidad tienen los métodos onEnter y onExit en el patrón State? Proporciona un ejemplo de por qué podrían ser útiles (incluso si no se usan mucho en todos los estados de este caso de estudio). Por ejemplo, ¿Qué podrías hacer en onEnter para AttractState o en onExit para StopState?
 
 Los metodos onEnter y onExit se usan para definir acciones al entrar o salir de un estado. Por ejemplo, en AttractState el onEnter podria inicializar una fuerza de atraccion hacia un punto, y en StopState el onExit podria resetear la velocidad a cero antes de pasar a otro estado.
+
+<a name = "actividad5"> <a\>
 
 # Actividad 5
 
