@@ -4,7 +4,7 @@
 ### seek 
 funcionamiento del programa:
 
-#### actividad 1
+# Actividad 1
 
 ##### ¿Cómo puedes interactuar con la aplicación? Menciona específicamente las teclas y qué efecto parecen tener sobre las partículas.
 
@@ -31,7 +31,7 @@ cada vez que pulsamos una tecla llamamos un metodo o algun sector del codigo que
 
 Los observers lo que hacen es actualizarse cuando un objeto especifico cambia, por ejemplo tenemos una particula, si esa particula cambia y esta vinculada a los observers, todos estos se actualizaran en funcion del cambio realizado
 
-### Actividad 2
+# Actividad 2
 
 Explica con tus propias palabras el propósito del patrón Observer. ¿Qué problema resuelve?
 Dicho patron se encarga de usar o mas bien introducir polimorfismo, dejando que otras clasese que serian los observadores esten ahi tecnicamente suscritos (como dices en el ejemplo del github) a la clase que sea sujeto
@@ -44,7 +44,7 @@ Dibuja un diagrama que muestre la relación entre Subject, Observer, ofApp y Par
 
 Usar el patrón Observer reduce el acoplamiento porque las partIculas no dependen directamente de una variable global ni de que ofApp::update las controle, sino que reaccionan a notificaciones de un sujeto; esto facilita la extensibilidad, ya que se pueden añadir nuevos tipos de partIculas u observadores sin cambiar la lOgica central, manteniendo el cOdigo más limpio, modular y fAcil de mantener.
 
-#### actividad 3 
+# Actividad 3 
 
 ##### Explica con tus propias palabras el propósito del patrón Factory Method (o Simple Factory, en este caso). ¿Qué problema principal aborda en la creación de objetos?
 
@@ -62,7 +62,7 @@ Para agregar black_hole, creas la clase con sus valores (grande, negro, lento), 
 
 Que createParticle sea estatico facilita llamarlo sin instancias y es mas simple. La desventaja es que limita configuracion y pruebas. Con una fabrica de instancia hay mas flexibilidad pero toca manejar el objeto.
 
-### Actividad 4
+# Actividad 4
 
 ##### Explica con tus propias palabras el propósito del patrón State. ¿Cuándo es útil aplicarlo?
 
@@ -76,7 +76,7 @@ Usar State en Particle es mejor que tener un string y un if/else gigante porque 
 
 Los metodos onEnter y onExit se usan para definir acciones al entrar o salir de un estado. Por ejemplo, en AttractState el onEnter podria inicializar una fuerza de atraccion hacia un punto, y en StopState el onExit podria resetear la velocidad a cero antes de pasar a otro estado.
 
-##### Actividad 5
+# Actividad 5
 
 codigo 
 
