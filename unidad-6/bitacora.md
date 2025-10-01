@@ -440,7 +440,19 @@ State: la black_hole empieza en BlackHoleState. El state define como se mueve le
 mi nota debe ser 4.5 debido a que
 
 actividad 1: esta completa con todo realizado 
-[evidencia] (# actividad1)
+[evidencia](#actividad1)
+
+actividad 2: hice todo menos una actividad entonces por eso es 4.5
+[evidencia](#actividad2)
+
+actividad 3: todo esa completo
+[evidencia](#actividad3)
+
+actividad 4: todo completo
+[evidencia](#actividad4)
+
+actividad 5: arriba se ve como todo esta completo tambien
+[evidencia](#actividad5)
 
 
 
