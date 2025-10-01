@@ -432,7 +432,7 @@ State: la supernova arranca en SupernovaState. En onEnter acelera su velocidad y
 mi nota debe ser 4.5 debido a que
 
 actividad 1: esta completa con todo realizado 
-[evidencia](#actividad1) (ver actividad 1)
+[evidencia](actividad1) (ver actividad 1)
 
 actividad 2: hice todo menos una actividad entonces por eso es 4.5
 [evidencia](#actividad2) (ver actividad 2)
