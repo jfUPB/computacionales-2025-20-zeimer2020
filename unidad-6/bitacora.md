@@ -1,9 +1,5 @@
 # Bitácora de aprendizaje de la unidad 6
 
-
-### seek 
-funcionamiento del programa:
-
 # Actividad 1
 
 ##### ¿Cómo puedes interactuar con la aplicación? Menciona específicamente las teclas y qué efecto parecen tener sobre las partículas.
