@@ -17,10 +17,15 @@ no, cada una se comporta de manera diferente, las verdes son las mas rapidas, la
 ##### Toma algunas capturas de pantalla de la aplicación en diferentes momentos (estado inicial, después de presionar ‘a’, ‘r’, ‘s’, ‘n’) y añádelas a tu bitácora.
 
 Atraer
+
 <img width="533" height="472" alt="image" src="https://github.com/user-attachments/assets/73d4907c-57e4-4dea-8de1-64fc5863b380" />
+
 Nornal
+
 <img width="980" height="617" alt="image" src="https://github.com/user-attachments/assets/0696f30f-c391-4ae8-95a7-3368c35c98e8" />
+
 Stop despues de Repeler
+
 <img width="993" height="571" alt="image" src="https://github.com/user-attachments/assets/1cbfd4c7-7f0a-4788-ab91-f374dc4cc37a" />
 
 ##### ¿Qué crees que está pasando “detrás de cámaras” cuando presionas las teclas? Formula una hipótesis inicial sobre cómo la aplicación cambia el comportamiento de las partículas.
