@@ -1,6 +1,6 @@
 # Bitácora de aprendizaje de la unidad 6
 
-<a name = "actividad1"> <a\>
+<a name = "actividad1"> </a>
 # Actividad 1
 
 
