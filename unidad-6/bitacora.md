@@ -197,7 +197,7 @@ private:
 
 ```
 
-``` ofApp.cpp
+``` cpp
 #include "ofApp.h"
 #include <algorithm>
 
