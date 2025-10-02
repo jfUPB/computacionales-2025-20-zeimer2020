@@ -18,11 +18,11 @@ no, cada una se comporta de manera diferente, las verdes son las mas rapidas, la
 
 Atraer
 
-<img width="533" height="472" alt="image" src="https://github.com/user-attachments/assets/73d4907c-57e4-4dea-8de1-64fc5863b380" />
+<img width="533" height="472" alt="image" src="https://github.com/user-attachments/assets/73d4907c-57e4-4dea-8de1-64fc5863b380" />  
 
 Nornal
 
-<img width="980" height="617" alt="image" src="https://github.com/user-attachments/assets/0696f30f-c391-4ae8-95a7-3368c35c98e8" />
+<img width="980" height="617" alt="image" src="https://github.com/user-attachments/assets/0696f30f-c391-4ae8-95a7-3368c35c98e8" />  
 
 Stop despues de Repeler
 
