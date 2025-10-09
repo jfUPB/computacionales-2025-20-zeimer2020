@@ -64,37 +64,36 @@ Cambia el buffer donde se dibujo por el que se muestra en pantalla. Si no se lla
 
 la CPU hace pocas taras pero muy complejas mientras que la GPU se encarga de multiples tareas, una gran variedad, sin embargo son simples, pero las hace al mismo tiempo.
 
-
-¿Cuáles son los tres pasos claves del pipeline de OpenGL?
+### ¿Cuáles son los tres pasos claves del pipeline de OpenGL?
 Transformación, rasterización y shading. Transformación convierte coordenadas a espacio de pantalla, rasterización convierte figuras en fragmentos, y shading calcula color y efectos visuales.
 
-¿Qué significa el pipeline programable?
-Que ahora el programador puede definir cómo se procesan vértices y fragmentos usando shaders, en lugar de depender de funciones fijas de OpenGL.
+### ¿Qué significa el pipeline programable?
+Que ahora el programador puede definir como se procesan vértices y fragmentos usando shaders, en lugar de depender de funciones fijas de OpenGL
 
 ¿Qué diferencia hay entre el pipeline fijo y el programable?
-El fijo usaba rutinas predefinidas por OpenGL; el programable permite personalizar el proceso con shaders escritos por el usuario.
+El fijo usaba rutinas predefinidas por OpenGL; el programable permite personalizar el proceso con shaders escritos por el usuario
 
-¿Qué ventajas le ves a esto?
-Mayor control, flexibilidad y posibilidad de crear efectos visuales avanzados o estilos únicos.
-Si el pipeline es programable, ¿Qué tengo que programar?
-Principalmente el vertex shader y el fragment shader, aunque se pueden usar más etapas como geometry o compute shaders.
-Si fueras a describir el proceso de rasterización, ¿Qué dirías?
-Convierte las primitivas (como triángulos) en fragmentos que luego se transforman en píxeles en pantalla.
+### ¿Qué ventajas le ves a esto?
+Mayor control, flexibilidad y posibilidad de crear efectos visuales avanzados o estilos únicos
+### Si el pipeline es programable, ¿Qué tengo que programar?
+Principalmente el vertex shader y el fragment shader, aunque se pueden usar más etapas como geometry o compute shaders
+### Si fueras a describir el proceso de rasterización, ¿Qué dirías?
+Convierte las primitivas (como triángulos) en fragmentos que luego se transforman en píxeles en pantalla
 
-¿Qué son los fragmentos? ¿Es lo mismo un fragmento que un pixel? ¿Por qué?
-Un fragmento es un candidato a pixel, con datos como color y profundidad; solo se convierte en pixel si pasa las pruebas del pipeline (como el depth test).
+### ¿Qué son los fragmentos? ¿Es lo mismo un fragmento que un pixel? ¿Por qué?
+Un fragmento es un candidato a pixel, con datos como color y profundidad, solo se convierte en pixel si pasa las pruebas del pipeline (como el depth test)
 
-Explica qué problema resuelve el Z-buffer y qué es el depth test.
-El Z-buffer guarda la profundidad de cada fragmento; el depth test decide si un fragmento debe verse o quedar oculto detrás de otro.
+### Explica qué problema resuelve el Z-buffer y qué es el depth test.
+El Z-buffer guarda la profundidad de cada fragmento, el depth test decide si un fragmento debe verse o quedar oculto detrAs de otro
 
-¿Por qué se presenta el problema del aliasing? ¿Qué es el anti-aliasing?
-El aliasing ocurre por la baja resolución al dibujar líneas o bordes; el anti-aliasing suaviza esos bordes mezclando colores cercanos.
+### ¿Por qué se presenta el problema del aliasing? ¿Qué es el anti-aliasing?
+El aliasing ocurre por la baja resolucion al dibujar lineas o bordes, el anti-aliasing suaviza esos bordes mezclando colores cercanos
 
-¿Qué relación hay entre la iluminación y el fragment shader?
-El fragment shader puede calcular la luz sobre cada fragmento. No es obligatorio usar iluminación, pero si no se usa, la escena se verá plana o sin volumen.
+### ¿Qué relación hay entre la iluminación y el fragment shader?
+El fragment shader puede calcular la luz sobre cada fragmento. No es obligatorio usar iluminación, pero si no se usa, la escena se verá plana o sin volumen
 
-¿Qué implica para la GPU que una aplicación tenga múltiples fuentes de iluminación?
-Más cálculos por fragmento, lo que aumenta la carga de procesamiento y puede reducir el rendimiento.
+### ¿Qué implica para la GPU que una aplicación tenga múltiples fuentes de iluminación?
+Mas calculos por fragmento, lo que aumenta la carga de procesamiento y puede reducir el rendimiento
 
 
 
