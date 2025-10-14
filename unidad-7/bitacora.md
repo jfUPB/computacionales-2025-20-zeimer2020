@@ -366,12 +366,12 @@ int main()
 
 # Autoevaluacion
 
-1: [evidencias](actividad1)
-2:[evidencias](actividad2)
-3:[evidencias](actividad3)
-4:[evidencias](actividad4)
-5:[evidencias](actividad5)
-6:[evidencias](actividad6)
+1: [evidencias](#actividad1)
+2:[evidencias](#actividad2)
+3:[evidencias](#actividad3)
+4:[evidencias](#actividad4)
+5:[evidencias](#actividad5)
+6:[evidencias](#actividad6)
 
 nota: 5
 
