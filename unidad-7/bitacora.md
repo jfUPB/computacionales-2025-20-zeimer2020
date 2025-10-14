@@ -1,5 +1,7 @@
 # Bitácora de aprendizaje de la unidad 7
 
+<a name = "actividad1"> </a>
+
 # actividad 1
 
 <img width="685" height="543" alt="image" src="https://github.com/user-attachments/assets/665d86f7-22ea-4734-985d-f093546daef9" />
@@ -10,10 +12,14 @@ para que es un frambuffer?
 para que son los comandos que empiezan con gl?
 que haceel buildshaderprogram?
 
+<a name = "actividad2"> </a>
+
 # actividad 2
 Resumen
 
 Descargamos tres dependencias externas (glad, glfw34 y glm-101-light), estas contienen librerías y archivos necesarios para poder crear un archivo usando OpenGL. Después de descargarlas, le edecimos a visual en dónde tenía que buscar los archivos importantes, para que no haya errores a la hora de compilar ni ejecutar los programas que allí creemos.
+
+<a name = "actividad3"> </a>
 
 # actividad 3
 
@@ -26,6 +32,8 @@ esto es lo que pasa
 framebuffer: Memoria donde OpenGL dibuja cada cuadro.	Es lo que finalmente se muestra en pantalla.
 
 comandos gl o contexto openGl: Entorno donde OpenGL guarda todo su estado.	Sin él, no se pueden ejecutar funciones de OpenGL.
+
+<a name = "actividad4"> </a>
 
 # Actiidad 4
 # Experimentos 
@@ -103,6 +111,8 @@ Usar un shader en OpenGL: escribir el codigo GLSL (vertex y fragment), compilar 
 
 <img width="381" height="438" alt="image" src="https://github.com/user-attachments/assets/5cdee12a-0abe-44d7-96dc-1b37fc0abeb8" />
 
+<a name = "actividad5"> </a>
+
 # Actividad 5
 ### Modifica el código del triángulo para que sea interactivo.
 ### Incluye una captura de pantalla del triángulo interactivo funcionando en tu máquina.
@@ -120,6 +130,8 @@ El mouse entrega pixeles con origen arriba izquierda, primero convierto mx y my 
 ### Explica el proceso de normalización a coordenadas de dispositivo (NDC) y cómo se relaciona con el sistema de coordenadas de OpenGL
 Tras las transformaciones de modelo vista proyeccion y la division por w los vertices quedan en el cubo de menos uno a mas uno en x y z, lo que esta dentro se rasteriza y el viewport lo mapea a pixeles de pantalla mientras lo que queda fuera se recorta
 
+<a name = "actividad6"> </a>
+
 # Actividad 6
 
 <img width="253" height="227" alt="image" src="https://github.com/user-attachments/assets/4d37fed9-e723-4c71-a405-757f51ba73b3" />
@@ -128,9 +140,13 @@ Tras las transformaciones de modelo vista proyeccion y la division por w los ver
 ### Basicamente cambia de tamaño segun que tan a la derecha o a la izquierda este el triangulo
 
 Explica como usaste la funcion de tiempo para el color ciclico, que rango produce y como afecta el color final
-Uso t igual glfwGetTime dentro del loop y aplico 0.5 mas 0.5 por sin de t para cada canal con frecuencias y fases distintas, sin produce valores entre menos uno y uno y al escalar queda entre cero y uno, esos valores alimentan ourColor y generan un cambio suave y repetitivo en r g b
+Uso t igual glfwGetTime dentro del loop y aplico 0.5 mas 0.5 por sin de t para cada canal con frecuencias y fases distintas, sin produce valores entre menos uno y uno y al escalar queda entre cero y uno, esos valores alimentan ourColor y generan un cambio suave y repetitivo en rgb
 
-``` c++
+### Describe brevemente los cambios que realizaste en el codigo C++ donde obtienes el tiempo, como y donde actualizas el uniform
+
+Obtengo el tiempo con glfwGetTime en el loop principal, calculo rgb con funciones sin usando t y fases distintas, obtengo la location de ourColor con glGetUniformLocation y actualizo cada frame con glUniform4f antes de dibujar
+
+``` C++
 #include <iostream>
 #include <cmath>
 #include <glad/glad.h>
@@ -350,12 +366,12 @@ int main()
 
 # Autoevaluacion
 
-1:
-2:
-3:
-4:
-5:
-6:
+1: [evidencias](actividad1)
+2:[evidencias](actividad2)
+3:[evidencias](actividad3)
+4:[evidencias](actividad4)
+5:[evidencias](actividad5)
+6:[evidencias](actividad6)
 
 nota: 5
 
